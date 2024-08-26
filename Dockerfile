@@ -20,4 +20,4 @@ COPY . /app/
 EXPOSE 80
 
 # Specify the command to run using Gunicorn
-CMD ["gunicorn", "-b", "0.0.0.0:80", "url_shortner.wsgi:application"]
+CMD ["gunicorn", "-b", "0.0.0.0:80", "movies_db.wsgi:application"]

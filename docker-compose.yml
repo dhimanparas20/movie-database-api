@@ -8,4 +8,4 @@ services:
     volumes:
       - .:/app
     restart: always
-    command: gunicorn -b 0.0.0.0:80 url_shortner.wsgi:application
+    command: gunicorn -b 0.0.0.0:80 movies_db.wsgi:application
